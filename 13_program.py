@@ -1,0 +1,17 @@
+Friend_name = ['rohit','ashvin','vinit','neel','ravi','harsh']
+Friend_name.insert(0,'kailash')
+Friend_name.insert(0,'vicky')
+print("Display List ",Friend_name)
+Friend_name.append('dhruv')
+Friend_name.append('tushar')
+print("Display List ",Friend_name)
+car = ['audi','bmw','tata','suzuki','mahendra']
+print(car)
+Friend_name.extend(car)
+print("Display List ",Friend_name)
+Friend_name.pop(0)
+print("Display List ",Friend_name)
+Friend_name.remove("tushar")
+print("Display List ",Friend_name)
+Friend_name.clear()
+print("Display List ",Friend_name)
