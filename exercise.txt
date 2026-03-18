@@ -163,7 +163,10 @@ while loop
 4   0    1   1   2   3   5   8   13  .... 100
 
 -------------------------
-5   write a program to findout only compound interest of given amount, rate, year 
+5.1 write a program to make sum of all digits in given amount 
+    input : 12345 process 1 + 2 + 3 + 4 + 5 output = 15
+      
+5.2 write a program to findout only compound interest of given amount, rate, year 
 6   write a program to findout power of given base and exponent 
 7   write a program to findout whether given number is prime number or not 
 8   write a program to findout whether given number is perfect number or not 
