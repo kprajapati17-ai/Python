@@ -298,3 +298,41 @@ exception handling
 --------------------------
 1) write a program to accept weight from user in kg. calculate BMI(body to mass index) and display it. handle all built in exception 
 
+
+
+
+baki
+
+
+7   write a program to findout whether given number is prime number or not 
+8   write a program to findout whether given number is perfect number or not 
+9   write a program to findout whether given number is palindrome 
+    input : 12321 output 12321 this is palindrome
+    input : 12345 output 54321 this is not palindrome
+10  write a program to display given amount into words 
+    input : 12345 output : one two three four five
+
+    
+functions
+-----------------------------------------------
+1) write a program to create function calculate and return simple Interest of given amount, rate, year 
+
+2) write a program to create function calculate and return compound Interest of given amount, rate, year 
+
+
+3) create function that has arbitary arguments of string type and it display all strings into lower case.
+toLowerCase('Apple','bAnana','ManGO','KIWI','graps')
+output 
+    apple banana mango kiwi graps
+
+4) create function getInches which has meter, foot and inches as argument this function should return total inches. note foot and inches are default aguments whose default value should be zero 
+
+3.2) create function getGrams which has ton,kg, grams as argument this function should return total grams. note kg and grams are default aguments whose default value should be zero 
+
+arbitrary
+-------------------------
+1) create function that returns average of player score of all 11 players (arbitrary arguments)
+2) create function that returns count of negative numbers from given number of argument 
+3) create function that returns how many words are palindrome words from given number of argument
+4) create function that return chandra rashi of user as per given data. findout suitable package for this task and use it. 
+5) create function that play text as audio in gujarati. findout suitable package for this task and use it.
