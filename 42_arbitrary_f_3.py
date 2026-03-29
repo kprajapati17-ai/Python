@@ -19,6 +19,7 @@ def palindrome(*words):
 
     for word in words:
         rev = ""   # empty string
+        
 
         for ch in word:
             rev = ch + rev   # manual reverse

@@ -11,7 +11,3 @@ while n > 0:
     ch.insert(0,num[reminder])
     n = n // 10
 print((" ".join(ch)))
-<<<<<<< HEAD
-    
-=======
->>>>>>> 2ea9bb2f3ded9fca27a77794ea113e3d543def46
