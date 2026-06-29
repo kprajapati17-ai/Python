@@ -1,0 +1,45 @@
+L1 = [
+    "porn", "pussy", "dick", "vagina", "penis", "clitoris", "asshole", "anal", 
+    "orgasm", "ejaculation", "intercourse", "copulation", "erotic", "erotica", 
+    "slut", "whore", "bitch", "bastard", "cunt", "cock", "boob", "tit", "nipple", 
+    "twerk", "striptease", "stripper", "fetish", "bdsm", "bondage", "sadism", 
+    "masochism", "incest", "pedophile", "beastiality", "voyeur", "exhibitionist", 
+    "swinger", "nude", "naked", "topless", "bottomless", "scantily", "sensual",
+    "lust", "naughty", "horny", "libido", "aphrodisiac", "escort", "prostitute",
+
+    "blowjob", "handjob", "rimjob", "deepthroat", "gangbang", "threesome", 
+    "foursome", "orgy", "bukkake", "creampie", "milf", "cougar", "sugar-daddy", 
+    "sugar-baby", "hooker", "call-girl", "sex-toy", "dildo", "vibrator", "lubricant", 
+    "condom", "gloryhole", "lapdance", "peepshow", "cuckold", "hentai", "ecchi", 
+    "yaoi", "yuri", "camgirl", "camboy", "playboy", "playgirl", "hustler",
+
+    "nsfw", "xxx", "x-rated", "adult-only", "18-plus", "restricted-content", 
+    "premium-snaps", "onlyfans", "fansly", "chaturbate", "live-cam", "sex-chat", 
+    "cybersex", "sexting", "dirty-talk", "red-light", "blue-movie", "smut", 
+    "softcore", "hardcore", "uncensored", "raw-footage",
+
+    "erection", "intercourse", "ejaculated", "clit", "testicles", "scrotum", "prostate", 
+    "semen", "sperm", "cumshot", "cum", "pre-cum", "jism", "schlong", "pecker", "coitus", 
+    "vixen", "womb", "pubic", "pubes", "cleavage", "underwears", "lingerie", "thong", 
+    "g-string", "panties", "undies", "bra", "braless", "garter", "corset", "fishnet", 
+    "nudity", "nakedness", "streaker", "exhibitionism", "voyeurism", "sadomasochism", 
+    "nympho", "nymphomaniac", "satyriasis", "incestuous", "pedophilia", "bestiality", 
+    "necrophilia", "zoophilia", "fellation", "cunnilingus", "anilingus", "sodomize", 
+    "sodomy", "masturbate", "masturbation", "wanking", "wanker", "jerkoff", "stroking",
+
+    "quickie", "one-night-stand", "booty-call", "friends-with-benefits", "fwb", "ons", 
+    "hookup", "making-out", "heavy-petting", "necking", "fondling", "groping", "groped", 
+    "dry-hump", "humping", "banging", "shagging", "screwing", "bone-ing", "laying", 
+    "get-laid", "mile-high-club", "glory-hole", "bukake", "muff-diver", "carpet-muncher", 
+    "pillow-biter", "ball-gags", "nipple-clamps", "leather-whip", "spanking", "paddling", 
+    "flogging", "choker", "safeword", "submissive", "dominant", "domina", "mistress-erotic", 
+    "sugar-momma", "toy-boy", "boy-toy", "adultery", "adulterous", "swinger-party", 
+    "gang-banged", "double-penetration", "dp-sex", "anal-beads", "butt-plug", "fleshlight",
+
+    "only-fans", "justforfans", "myfreecams", "camsoda", "manyvids", "pornhub", "xvideos", 
+    "xnxx", "redtube", "youporn", "brazzers", "naughtyamerica", "digital-playground", 
+    "hentai-haven", "multporn", "rule34", "gelbooru", "danbooru", "e621", "doujin", 
+    "doujinshi", "yaoi-manga", "yuri-anime", "nsfw-twitter", "nsfw-reddit", "adult-gif", 
+    "premium-snap", "snap-sexting", "dirty-snaps", "skype-sex", "discord-nsfw", 
+    "telegram-adult", "leak-video", "leaked-tape", "sex-tape", "hidden-cam", "spy-cam"
+]
