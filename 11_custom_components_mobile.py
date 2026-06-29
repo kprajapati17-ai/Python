@@ -2,18 +2,15 @@ import spacy
 import re
 from spacy.language import Language
 from spacy.tokens import Doc
+import checkmobile as mn
 
 nlp = spacy.load("en_core_web_sm")
 
 Doc.set_extension("MobileNumbers", default=[])
 
-def get_mobile_numbers(text):
-    pattern = r'(?:\+91[\-\s]?)?[6-9]\d{9}\b'
-    return re.findall(pattern, text)
-
 @Language.component("FetchMobileNumbers")
 def FetchMobileNumbers(doc):
-    doc._.MobileNumbers = get_mobile_numbers(doc.text)
+    doc._.MobileNumbers = mn.get_mobile_numbers(doc.text)
     return doc
 
 nlp.add_pipe("FetchMobileNumbers", last=True)
