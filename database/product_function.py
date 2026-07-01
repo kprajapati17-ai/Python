@@ -1,4 +1,25 @@
 import connect as conn
+
+def getPrice(id):
+
+    sql="select price,quantity from product where pid = %s"
+
+    data=[id]
+
+    cursor = conn.connect.cursor(dictionary=True)
+
+    cursor.execute(sql,data)
+
+    table = cursor.fetchall()
+
+    No_Of_Rows = len(table)
+
+    if No_Of_Rows ==0:
+        return 0
+    else:
+        return table[0]['price'],table[0]['quantity']
+        
+
 def show(table):
     print(f"{'ID':<10} {'NAME':<40} {'PRICE':<12} {'QUANTITY':<12}")
     print("-" * 80)
