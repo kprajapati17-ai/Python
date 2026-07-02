@@ -95,5 +95,65 @@ def SearchItemInBill():
 
         print("_" * 110)
 
+def GenerateBill():
+    confirm = input("Are you sure? you want to generate bill (press y/Y)")
+    if confirm.lower() == 'y':
+        # Task 1 check is there any unbilled item / calculate total 
+        # Task 2 reduce stock of each and every product added into bill_items 
+        # Task 3 accept customer name, email, mobile 
+        # Task 4 insert row into bill table
+        # Task 4 update bill_item table billid field, use last row id of bill to update it
+
+        #Task 1 
+        sql ="select sum(rate * quantity) as total from bill_items where billid=0"
+        cursor = conn.connect.cursor(dictionary=True)
+        cursor.execute(sql)
+        row = cursor.fetchone()
+        total = row['total']
+
+        if row['total']==0:
+                print("No item found in bill")
+        else:
+            #Task 2 
+            sql ="select productid,quantity from bill_items where billid=0"
+            cursor.execute(sql)
+            table = cursor.fetchall()
+
+            for row in table:
+                quantity = row['quantity']
+                productid = row['productid']
+                sql = "update product set quantity=quantity-%s where pid = %s"
+                data = [quantity,productid]
+                cursor.execute(sql,data)
+
+            #Task 3
+            name = input("Enter Customer Name:")
+            mobile = input("Enter Mobile No:")
+            email = input("Enter Email:")
+            paymentmode = input("Enter Payment Mode (1=Cash, 2=Credit) :")
+
+            sql = "insert into bill(customername,email,mobile,amount,paymentmode) values(%s,%s,%s,%s,%s)"
+
+            data=[name,email,mobile,total,paymentmode]
+
+            cursor.execute(sql,data)
+
+            billid = cursor.lastrowid #get last inserted row id of bill table
+
+             # Task 4
+            sql = "update bill_items set billid=%s where billid=0"
+            data = [billid]
+            cursor.execute(sql,data)
+
+            print("BILL has been generated successfully")
+            conn.connect.commit()
+
+    key = input("Press any to continue")
+
+                
+
+       
+
+
 
 
