@@ -2,7 +2,7 @@ import spacy
 import re
 from spacy.language import Language
 from spacy.tokens import Doc
-import checkmobile as mn
+import spacy.checkmobile as mn
 
 nlp = spacy.load("en_core_web_sm")
 

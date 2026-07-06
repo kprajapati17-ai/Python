@@ -3,7 +3,7 @@ import re
 from spacy.language import Language
 from spacy.tokens import Doc 
 
-from checkemail import get_emails
+from spacy.checkemail import get_emails
 
 nlp = spacy.load('en_core_web_sm')
 

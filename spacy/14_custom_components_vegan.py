@@ -2,7 +2,7 @@ import spacy
 import re
 from spacy.language import Language
 from spacy.tokens import Doc
-from vegan_no_vegan_list import vegan,non_vegan
+from spacy.vegan_no_vegan_list import vegan,non_vegan
 
 nlp = spacy.load("en_core_web_sm")
 

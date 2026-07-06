@@ -2,7 +2,7 @@ import spacy
 import re
 from spacy.language import Language
 from spacy.tokens import Doc
-from indian_ingredients import ingredients 
+from spacy.indian_ingredients import ingredients 
 
 nlp = spacy.load("en_core_web_sm")
 

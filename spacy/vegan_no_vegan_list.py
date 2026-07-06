@@ -77,4 +77,4 @@ non_vegan = [
     "Shellac", "Duck Egg", "Quail Egg",
 
     
-]
+] p37

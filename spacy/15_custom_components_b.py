@@ -2,7 +2,7 @@ import spacy
 import re
 from spacy.language import Language
 from spacy.tokens import Doc
-from bad_words import L1
+from spacy.bad_words import L1
 
 nlp = spacy.load("en_core_web_sm")
 
