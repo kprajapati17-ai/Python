@@ -1,91 +1,37 @@
-import spacy
-import knowledge_base as kb
+# chatbot.py
+# Core matching engine for the simple offline chatbot.
 
-greetings = [
-    "hello", "hi", "hey",
-    "good morning", "good afternoon", "good evening",
-    "greetings", "welcome", "howdy", "good day",
-    "morning", "gm",
-    "nice to meet you", "pleased to meet you",
-    "how are you", "how's it going", "how have you been",
-    "what's up", "what's new", "how do you do",
-    "long time no see", "glad to meet you",
-    "it's a pleasure to meet you",
-    "good to see you", "happy to see you",
-    "welcome back", "hope you're doing well",
-    "hope you are fine"
-]
+import preprocessing
+import knowledge_base
 
-nlp = spacy.load("en_core_web_sm")
-
-
-def is_greeting(text):
-
-    text = text.lower().strip()
-
-    clean_list = []
-
-    for ch in text:
-
-        if ch.isalnum() or ch.isspace():
-            clean_list.append(ch)
-
-    clean_text = "".join(clean_list)
-
-    for greet in greetings:
-
-        if greet in clean_text:
-            return True
-
-    return False
-
-
-def preprocess(question):
-
-    # Greeting Check
-    if is_greeting(question):
-        print("Bot : Hello! Nice to meet you 😊")
-        return
-
-    doc = nlp(question)
-
-    best_answer = None
-    highest_priority = -1
-
-    for token in doc:
-
-        for topic in kb.knowledge["topics"]:
-
-            keywords = kb.knowledge["topics"][topic]["keywords"]
-            priority = kb.knowledge["topics"][topic]["priority"]
-
-            if token.text.lower() in keywords:
-
-                if priority > highest_priority:
-
-                    highest_priority = priority
-                    best_answer = kb.knowledge["topics"][topic]["answer"]
-
-    # Final Answer
-    if best_answer:
-        print("Bot :", best_answer)
-    else:
-        print("Bot : Sorry! I don't know the answer.")
-
-
-
-
-print("Bot : Hello! I am your assistant.")
-print("Type 'bye' to exit.\n")
-
-while True:
-
-    question = input("You : ")
-
-    q = question.lower().strip()
-
-    if q == "bye":
-        print("Bot : Bye! Have a nice day ")
-        break
-
-    preprocess(question)
+def get_response(user_question):
+    """
+    Cleans the input question, checks for keyword matches in the knowledge base,
+    and returns the corresponding answer.
+    """
+    # 1. Clean the user's question (lowercase and remove punctuation)
+    cleaned_question = preprocessing.clean_text(user_question)
+    
+    # 2. Split the cleaned question into individual words
+    words = cleaned_question.split()
+    
+    # 3. Loop through each topic in the offline knowledge base
+    for topic, data in knowledge_base.knowledge.items():
+        # Check each keyword associated with the topic
+        for keyword in data["keywords"]:
+            if isinstance(keyword, list):
+                # Composite matching: check if ALL words in the list are in user question words
+                match = True
+                for word in keyword:
+                    if word not in words:
+                        match = False
+                        break
+                if match:
+                    return data["answer"]
+            else:
+                # Single keyword matching: check if it is in user question words
+                if keyword in words:
+                    return data["answer"]
+                
+    # 4. Return fallback response if no keyword matched
+    return "Sorry, I don't have information about that yet."
