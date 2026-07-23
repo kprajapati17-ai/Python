@@ -1,0 +1,79 @@
+============================================================
+EASYLEARN ACADEMY - CHAT SESSION LOG
+============================================================
+Session ID : 2f75c7fc36bf4da2b2beb591d7a6d70e
+Full Name  : Kailash Prajapati
+Email      : kailashprajapati8347@gmail.com
+Mobile     : 8141049893
+Start Time : 2026-07-23 19:03:48
+End Time   : 2026-07-23 19:05:22
+============================================================
+
+CONVERSATION HISTORY:
+[2026-07-23 19:03:48] [Bot]: Hello! I am your EasyLearn Academy assistant.
+[2026-07-23 19:03:48] [Bot]: Type 'bye' or click 'End Session' to finish the session.
+[2026-07-23 19:03:51] [User]: hi
+[2026-07-23 19:03:51] [Bot]: Hello! 👋 Welcome to EasyLearn Academy. How can I assist you with our courses, fees, timings, or placement details today?
+[2026-07-23 19:04:02] [User]: thnk you
+[2026-07-23 19:04:02] [Bot]: You're most welcome! 😊 If you have any more questions about our IT courses or admissions, feel free to ask!
+[2026-07-23 19:04:11] [User]: tell me abot
+[2026-07-23 19:04:11] [Bot]: EasyLearn Academy (also known as IT Experts Academy) is a leading IT training institute in Bhavnagar, Gujarat. 
+We specialize in practical, job-oriented courses in programming, web development, mobile apps, AI/ML, Data Science, and Cybersecurity. 
+Our mission is to make quality IT education accessible and affordable for students in smaller cities, with strong focus on hands-on projects and placement support.
+[2026-07-23 19:04:21] [User]: python cours
+[2026-07-23 19:04:21] [Bot]: Python Course (Job-Oriented)
+• Duration: 3 months
+• Timings: 2 hours per session
+• Fees: ₹7500 (EMI available)
+
+Comprehensive Topics:
+• Python Fundamentals (Variables, Data Types, Operators, Input/Output)
+• Control Flow (if-else, loops)
+• Functions, Modules & Packages
+• Strings, Lists, Tuples, Dictionaries, Sets
+• File Handling & Exception Handling
+• Object-Oriented Programming (OOP)
+• Introduction to Libraries (NumPy, Pandas)
+• Mini Projects: Calculator, File Manager, Simple Games, Data Analysis scripts
+
+Perfect for beginners aiming for software development or data roles. Includes live projects and certificate.
+[2026-07-23 19:04:37] [User]: loction
+[2026-07-23 19:04:37] [Bot]: We are located at Eva Surbhi Mall, 105, Waghawadi Road, opposite Aksharwadi Temple, Bhavnagar, Gujarat - 364002. 
+You can visit us Monday to Saturday, 9 AM to 7 PM. Check our website for Google Maps link: https://theeasylearnacademy.com/
+[2026-07-23 19:05:02] [User]: ai ml
+[2026-07-23 19:05:02] [Bot]: We offer the following job-oriented courses:
+• Python Programming (3 months)
+• MERN Full Stack Development (6 months)
+• AI/ML (8 months)
+• Data Science (8 months)
+• Cyber Security (8 months)
+• Flutter Mobile App Development (6 months)
+• Digital Marketing (6 months)
+• C Programming (1.5 months)
+• C++ Programming (1.5 months)
+• Java Programming (3 months)
+• CCC (3 months)
+• Tally with GST (3 months)
+
+All courses include practical projects, certificates, and placement support. Contact us for detailed syllabus and current offers.
+[2026-07-23 19:05:15] [User]: ai mi cours
+[2026-07-23 19:05:15] [Bot]: AI & Machine Learning Course
+• Duration: 8 months
+• Timings: 2 hours per session
+• Fees: ₹40000 (EMI available)
+
+Comprehensive Topics:
+• Python for Data Science & ML
+• Data Preprocessing, Cleaning & Visualization (Pandas, Matplotlib, Seaborn)
+• Statistics & Probability for ML
+• Supervised Learning (Regression, Classification - Linear, Logistic, Decision Trees, Random Forest, SVM)
+• Unsupervised Learning (Clustering - K-Means, Hierarchical)
+• Neural Networks & Deep Learning basics
+• TensorFlow / Keras for building models
+• Model Evaluation, Hyperparameter Tuning
+• Real-world Projects: Image Classifier, House Price Prediction, Chatbot basics
+• Deployment of ML Models
+
+Ideal for students wanting careers in AI/ML/Data roles. Strong practical focus with projects.
+
+============================================================
