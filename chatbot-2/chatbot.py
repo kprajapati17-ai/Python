@@ -171,19 +171,31 @@ def send_email_with_attachment(file_path):
         print(f"Bot: [SMTP] Error sending email: {e}")
         print("Bot: [SMTP] The log file was saved successfully but could not be sent via email.")
 
+EMAIL_REGEX = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+MOBILE_REGEX = r'^[0-9]{10}$'
+
 if __name__ == '__main__':
     # Chatbot Loop
     start_prompt = "Bot: Hello! I am your EasyLearn Academy assistant."
     print(start_prompt)
     
-    prompt_name = "Please enter your full name: "
-    fullname = input(prompt_name).strip()
+    while True:
+        fullname = input("Please enter your full name: ").strip()
+        if fullname:
+            break
+        print("Bot: Name cannot be empty. Please enter your name.")
     
-    prompt_email = "Please enter your email: "
-    email = input(prompt_email).strip()
+    while True:
+        email = input("Please enter your email: ").strip()
+        if re.match(EMAIL_REGEX, email):
+            break
+        print("Bot: Invalid email format! Please enter a valid email address (e.g. user@example.com).")
     
-    prompt_mobile = "Please enter your mobile number: "
-    mobile = input(prompt_mobile).strip()
+    while True:
+        mobile = input("Please enter your mobile number: ").strip()
+        if re.match(MOBILE_REGEX, mobile):
+            break
+        print("Bot: Invalid mobile number! Please enter a valid 10-digit mobile number (e.g. 9876543210).")
     
     # File Setup
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")

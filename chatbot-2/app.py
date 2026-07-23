@@ -1,9 +1,13 @@
 import os
 import uuid
 import datetime
+import re
 from flask import Flask, request, jsonify, send_from_directory
 
 app = Flask(__name__)
+
+EMAIL_REGEX = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+MOBILE_REGEX = r'^[0-9]{10}$'
 
 # Active session store (in-memory)
 sessions = {}
@@ -55,8 +59,12 @@ def start_session():
     email = data.get('email', '').strip()
     mobile = data.get('mobile', '').strip()
     
-    if not fullname or not email or not mobile:
-        return jsonify({'error': 'Full name, email, and mobile number are required to start the chatbot.'}), 400
+    if not fullname:
+        return jsonify({'error': 'Full name is required.'}), 400
+    if not email or not re.match(EMAIL_REGEX, email):
+        return jsonify({'error': 'Please enter a valid email address (e.g. name@example.com).'}), 400
+    if not mobile or not re.match(MOBILE_REGEX, mobile):
+        return jsonify({'error': 'Please enter a valid 10-digit mobile number.'}), 400
         
     session_id = uuid.uuid4().hex
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
